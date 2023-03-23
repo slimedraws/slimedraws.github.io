@@ -1,0 +1,68 @@
+body {
+    background-color: blueviolet;
+    color:aquamarine;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14pt;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div {
+    border: solid 3px rgb(88, 37, 88);
+    margin: 4px;
+    padding:4px;
+}
+a {
+    color:aquamarine
+}
+
+
+#thebox {
+    /* animation: changeColor 3s linear 2s infinite alternate; */
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+        /* animation-fill-mode: forwards; */
+}
+
+#thesecondbox {
+    background-color: white;
+    height: 200px;
+    position: relative;
+}
+
+#mr_yipee {
+    height: 200px;
+    position: absolute;
+    animation-name: YIPEEE;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes YIPEEE {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 80%;
+    }
+}
+
+
+@keyframes changeColor {
+    /* 0% {background-color: rgba(102, 24, 128, 0);} */
+    50% {
+        background-color: rgba(91, 42, 165, 0.379);
+    }
+    75% {
+        background-color: rgba(30, 109, 102, 0.594);
+    }
+    100% {
+        background-color: rgb(30, 61, 51);
+        font-size: 16pt;
+    }
+}
